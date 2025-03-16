@@ -1,0 +1,5 @@
+*.java linguist-detectable
+*.jsx linguist-detectable
+*.tsx linguist-detectable
+*.sql linguist-detectable
+pom.xml linguist-detectable
