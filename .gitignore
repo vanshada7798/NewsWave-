@@ -44,6 +44,4 @@ target/
 # Ignore uploaded files (if any)
 uploads/
 
-# Ignore sensitive configuration files
-application.properties
-
+application.properties  # Comment out this line if needed
