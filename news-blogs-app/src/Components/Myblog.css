@@ -1,0 +1,346 @@
+/* Blog Container */
+.blog-container {
+  width: 160%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  background: linear-gradient(to right, #003973, #E5E5BE);
+  backdrop-filter: blur(10px); /* Glass effect */
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 60px;
+}
+
+/* Blog Form */
+.blog-form {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 1); /* White background */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #212529;
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Inputs */
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #212529;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-form input:focus,
+.blog-form textarea:focus {
+  border-color: #ff4500;
+  box-shadow: 0 0 8px rgba(255, 69, 0, 0.5);
+  outline: none;
+}
+
+/* Blog Form Button */
+.blog-form button {
+  width: 100%;
+  background-color: #ff4500;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.blog-form button:hover {
+  background-color: #cc3700;
+  transform: scale(1.05);
+}
+
+.blog-form button:focus {
+  outline: 3px solid #ff4500;
+  outline-offset: 3px;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+  background: rgba(255, 255, 255, 1); /* White background */
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Blog Modal */
+.blog-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.comment-section {
+  margin-top: 15px;
+}
+
+.comments-list {
+  margin-top: 10px;
+}
+
+.comment-item {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+
+
+.blog-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+/* Comment Section */
+.comment-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.comment-section textarea {
+  width: 80%; /* Resize the comment box */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Add some space between the textarea and the buttons */
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-start; /* Align comment action buttons to the left */
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.comments-list {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.comment-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.comment-item img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-item p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.no-comments {
+  font-style: italic;
+  color: grey;
+}
+
+/* Blog Actions (Like, Share, Comment) */
+.blog-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #ff4500;
+}
+
+.blog-actions button {
+  background: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.blog-actions button:hover {
+  background: #218838;
+}
+
+.blog-actions button:focus {
+  outline: 2px solid #28a745;
+  outline-offset: 2px;
+}
+
+/* Social Media Sharing */
+.social-share {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 10px;
+}
+
+/* Individual Share Icons */
+.share-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Facebook */
+.share-icon:nth-child(1) {
+  color: #3b5998;
+}
+
+.share-icon:nth-child(1):hover {
+  color: #2d4373;
+}
+
+/* Instagram */
+.share-icon:nth-child(2) {
+  color: #e4405f;
+}
+
+.share-icon:nth-child(2):hover {
+  color: #bc2a8d;
+}
+
+/* LinkedIn */
+.share-icon:nth-child(3) {
+  color: #0077b5;
+}
+
+.share-icon:nth-child(3):hover {
+  color: #005582;
+}
+
+/* Like and Share Buttons */
+.like-btn, .share-btn {
+  background-color: #ff4500;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.like-btn:hover, .share-btn:hover {
+  background-color: #cc3700;
+}
+
+.like-btn svg, .share-btn svg {
+  margin-right: 8px;
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-modal {
+    width: 90%;
+  }
+
+  /* Comment Input Box Adjustments for Small Screens */
+  .comment-section textarea {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

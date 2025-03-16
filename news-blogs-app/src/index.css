@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Allow scrolling */
+  background: linear-gradient(to right, #003973, #E5E5BE);
+}
+
+#root {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+}

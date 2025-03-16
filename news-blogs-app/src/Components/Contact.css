@@ -1,0 +1,153 @@
+/* 🌟 Main Contact Page Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: linear-gradient(to right, #003973, #E5E5BE);
+  padding: 40px 20px;
+}
+
+/* 📌 Contact Content */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 📌 Contact Title & Text */
+.contact-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #003973;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 📌 Contact Form */
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 📌 Form Fields */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #0073e6;
+}
+
+.contact-textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* 📌 Submit Button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #005bb5;
+}
+
+/* 📌 Footer Styling */
+.contact-footer {
+  width: 120%;
+  background-color: #242531; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  margin-bottom: -50px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.footer-list li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* 🌍 Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #0073e6;
+  font-weight: bold;
+}

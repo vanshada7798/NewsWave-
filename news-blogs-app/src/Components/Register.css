@@ -1,0 +1,98 @@
+
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #003973, #E5E5BE);
+}
+
+.register-box {
+  background: #fff;
+  padding: 1.5rem; /* Reduced padding for a smaller form */
+  border-radius: 8px; /* Slightly smaller border radius */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Reduced width for a smaller box */
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px; /* Reduced margin */
+  color: #333;
+  font-size: 22px; /* Reduced font size */
+}
+
+.message {
+  color: #d9534f;
+  font-size: 12px; /* Reduced font size */
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 12px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px; /* Reduced font size */
+}
+
+textarea {
+  resize: none;
+  height: 70px; /* Reduced height */
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  padding: 8px; /* Reduced padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size */
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.profile-preview {
+  width: 60px; /* Reduced size */
+  height: 60px; /* Reduced size */
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #007bff;
+}
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.toggle-password:hover {
+  color: #0056b3;
+}
+
